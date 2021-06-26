@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>설문조사</title>
+</head>
+<body>
+    <header>
+        <center>
+            <h3> ABOUT U :)</h3>
+        </center>
+    </header>
+    <form>
+        <h3>오늘 날짜를 입력해주세요.</h3>
+        TODAY : <input type="date" name="today">
+        <h3>이메일을 입력해주세요.</h3>
+        이메일 : <input type="email" name="myemail">
+        <p></p>
+    </form>
+    <hr size="2" align="left" width="100%" noshade="noshade" color="#010200"> </hr>
+    <h4>-간단한 인적사항-</h4>
+    <form>
+        <h4>당신의 성별은?</h4>
+        <input type="radio" name="sex" value="male" checked>남자
+        <input type="radio" name="sex" value="female" >여자
+        <p></p>
+        <h4>당신의 이름은?</h4>
+        <p>이름 : <input type="text" name="name" size="10"></p>
+        <h4>당신의 나이는?</h4>
+        <p>나이 : <input type="text" name="age" size="10"></p>
+        <h4>당신의 생일은?</h4>
+        Birthday : <input type="datetime-local" name="bday time">
+        <p></p>
+        <h4>당신의 학력은?</h4>
+        <input type="radio" name="education" value="1" checked>초졸
+        <input type="radio" name="education" value="2" >중졸
+        <input type="radio" name="education" value="3">고졸
+        <input type="radio" name="education" value="4">2년제 대졸
+        <input type="radio" name="education" value="5">4년제 대졸
+        <input type="radio" name="education" value="6">석사 
+        <input type="radio" name="education" value="7">박사
+        <h4>당신의 계열/학과는?</h4>
+        <select name="subjects">
+            <option value="1" selected>인문계열</option>
+            <option value="2">사회과학계열</option>
+            <option value="3">자연과학계열</option>
+            <option value="4">간호계열</option>
+            <option value="5">경영계열</option>
+            <option value="6">공과계열</option>
+            <option value="7">농업생명과학계열</option>
+            <option value="8">미술계열</option>
+            <option value="9">사범계열</option>
+            <option value="10">생활과학계열</option>
+            <option value="11">수의과계열</option>
+            <option value="12">약학계열</option>
+            <option value="13">음악계열</option>
+            <option value="14">의과계열</option>
+            <option value="15">자유전공</option>
+            <option value="16">치의학계열</option>
+            <option value="17">예체능계열</option>
+        </select>
+        <h4>학생이라면, 몇 학년?</h4>
+        <input type="radio" name="year" value="1" checked>1학년
+        <input type="radio" name="year" value="2" >2학년
+        <input type="radio" name="year" value="3">3학년
+        <input type="radio" name="year" value="4">4학년
+        <input type="radio" name="year" value="5">해당없음
+        <hr size="2" align="left" width="100%" noshade="noshade" color="#010200"> </hr>
+        <h4>좋아하는 색상은?</h4>
+        <input type="color" name="color_value" value="#0000ff">
+        <p></p>
+
+        <h4>좋아하는 게임이 있다면?</h4>
+        <button type="button" onclick="alert('오버워치')">
+        <img src="./img/오버워치.jpeg" width="80" height="80"></button>
+        <button type="button" onclick="alert('배그')">
+        <img src="./img/배그.jpeg" width="80" height="80"> </button>
+        <button type="button" onclick="alert('리그오브레전드')">
+        <img src="./img/롤.jpeg" width="80" height="80"> </button>
+        <button type="button" onclick="alert('피파')">
+        <img src="./img/피파.jpeg" width="80" height="80"> </button>
+        <button type="button" onclick="alert('서든어택')">
+        <img src="./img/다운로드.jpeg"width="80" height="80"> </button>
+                    
+
+        <p></p>
+        <input type="submit" value="제출">
+        <input type="reset" value="다시작성">
+        <p></p>
+        <h2>솜에게 해주고 싶은 말</h2>
+        <form>
+            <textarea rows="8" cols="50">솜에게 해주고 싶은 말 자유롭게 작성해주세요.</textarea>
+            <p></p>
+            <input type="submit" value="보내기">
+            <input type="reset" value="다시쓸래">
+        </form>
+        
+    </form>
+</body>
+</html>
