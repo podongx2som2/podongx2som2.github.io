@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>로그인 화면</title>
+    <meta charset="UTF-8"> 
+    <style>
+        h2{
+            color: crimson;
+            background-color: oldlace;
+            width: 20%;
+        }
+        .id {
+            margin: 120px 0 0 10px;
+            border: 6px dotted deeppink;
+            background-color: oldlace;
+            width: 60%;
+        }
+        img{
+            float: left;
+            width: 10%;
+            height: 10%;
+            margin: 0 0 0 50px;
+        }
+    </style>
+</head>
+<body>
+    <a href="./hw06.html" >< home</a>
+    <center>
+        <h2>로그인</h2>
+        <p> </p>
+        <p> </p>
+        <img src="./img/login.png" alt="." >
+        <div class="id">
+            <h3>아이디와 비밀번호를 입력하신 후, 로그인 버튼을 클릭해주세요.</h3>
+            <br>
+            <form>
+                <p>ID : <input type="text" name="id" size="20" required></p>
+                <p>PW : <input type="text" name="pw" size="20" required></p>
+                <p></p>
+                <br>
+                <input type="radio" name="id" value="save" >아이디 저장
+                <input type="submit" value="로그인">
+                <input type="reset" value="비밀번호찾기">
+                <br>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
