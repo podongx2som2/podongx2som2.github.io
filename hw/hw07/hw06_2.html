@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>예매 페이지</title>
+    <meta charset="UTF-8">  
+    <style>
+        h1{
+            color: grey;
+            font-size: 45px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin: 0;
+            padding: 20px;
+        }
+        ol{
+            border-right: 1px solid gray;
+            width: 120px;
+            margin: 0;
+            padding: 20px;
+        }
+        #grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #grid ol{
+            padding-left: 30px;
+        }
+        #article {
+            float: right;
+            padding-left: 30px;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <a href="./hw06.html">< home</a>
+    <h1>영화 예매</h1>
+    <div id="gird">
+        <ol>
+            <li>영화선택</li>
+            <br>
+            <li>극장선택</li>
+            <br>
+            <li>날짜</li>
+            <br>
+            <li>시간</li>
+            <br>
+            <li>좌석선택</li>
+            <br>
+            <li>결제</li>
+            <br>
+        </ol>
+        <div id="article">
+            <img src="./img/루카.jpg" alt="메인화면" width="200" height="200">
+            <img src="./img/미드나이트.jpg" alt="메인" width="200" height="200">
+            <img src="./img/발신제한.jpg" alt="메인2" width="200" height="200">
+
+        </div>
+    </div>
+    <h2>1단계] 예매하실 영화를 선택해주세요.</h2>
+    <form>
+        <lable>예매하실 영화를 입력하세요.</lable>
+        <input type="text" list="movielist" name="movie">
+        <datalist id="movielist">
+            <option value="킬러의보드가드2">킬러의보디가드2</option>
+            <option value="체르노빌1986">체르노빌1986</option>
+            <option value="콰이어트플레이스2">콰이어트플레이스2</option>
+            <option value="인더하이츠">인더하이츠</option>
+            <option value="루카">루카</option>
+            <option value="미드나이트">미드나이트</option>
+            <option value="발신제한">발신제한</option>
+            <option value="크루엘라">크루엘라</option>
+        </datalist>
+        <p></p>
+        <input type="submit" value="선택완료">
+        <input type="reset" value="다시작성">
+    </form>
+<br>
+    <h2>2단계] 극장을 선택해주세요.</h2>
+    <form>
+        <lable>극장을 선택해주세요.</lable>
+        <select name="theater">
+            <optgroup label="ㄱ">
+                <option>강남</option>
+                <option>강변</option>
+                <option>건대입구</option>
+                <option>구로</option>
+            </optgroup>
+            <optgroup label="ㄷ">
+                <option>대학로</option>
+                <option>동대문</option>
+                <option>등촌</option>
+            </optgroup>
+            <optgroup lang="ㅁ">
+                <option>명동</option>
+                <option>목동</option>
+                <option>미아</option>
+            </optgroup>
+            <optgroup label="ㅂ">
+                <option>불광</option>
+            </optgroup>
+            <optgroup label="ㅅ">
+                <option>상봉</option>
+                <option>성신여대입구</option>
+                <option>송파</option>
+                <option>수유</option>
+                <option>신촌아트레온</option>
+            </optgroup>
+            <optgroup label="ㅇ">
+                <option>압구정</option>
+                <option>여의도</option>
+                <option>영등포</option>
+                <option>왕십리</option>
+                <option>용산아이파크몰</option>
+            </optgroup>
+            <optgroup label="ㅈ">
+                <option>중계</option>
+            </optgroup>
+            <optgroup label="ㅊ">
+                <option>천호</option>
+                <option>청담씨네시티</option>
+            </optgroup>
+            <optgroup label="ㅎ">
+                <option>하계</option>
+                <option>홍대</option>
+            </optgroup>
+        
+        </select>
+        <input type="submit" value="선택">
+        <input type="submit" value="다시선택">
+    </form>
+<br>
+    <h2>3단계] 날짜와 시간을 선택해주세요.</h2>
+    DAY : <input type="date" name="day">
+    TIME : <input type="time" name="time">
+    <input type="submit" value="제출">
+    <input type="reset" value="다시선택">
+    <br>
+
+    <h2>4단계] 좌석을 선택해주세요.</h2>
+    <img src="./img/좌석표.jpeg" alt="좌석표" width="500" height="500">
+    좌석 번호 입력 : <input type="text" name="seat">
+    <br>
+    <h2>5단계] 예매자의 정보를 입력해주세요.</h2>
+
+    <form>
+        <fieldset>
+            <legend>개인정보입력</legend>
+            <p>성함 : <input type="text" name="name"></p>
+            <p>전화번호 : <input type="text" name="tel"></p>
+            <input type="submit" value="제출">
+            <input type="reset" value="다시작성">
+        </fieldset>
+    </form>
+<br>
+<br>
+    <h3>결제페이지로 넘어가시겠습니까?</h3>
+    <a href="http://www.cgv.co.kr/ticket/" target="_blank"><input type="submit" value="yes"></a>
+    <input type="reset" value="no">
+</body>
+</html>
